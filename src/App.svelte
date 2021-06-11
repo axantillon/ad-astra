@@ -1,5 +1,6 @@
 <script lang="ts">
   import Wolf3D from "./components/Wolf3D.svelte";
+  import Astra from "./components/Astra.svelte";
   import CreateModal from "./components/CreateModal.svelte";
 
   let creatingAvatar = false;
@@ -12,9 +13,11 @@
 
 <main class="flex justify-center items-center w-full h-full">
   {#if creatingAvatar}
-    <Wolf3D/>
+    <!-- <Wolf3D/> -->
+    <Astra/>
   {:else}
-    <CreateModal on:click={createAvatar}/>
+    <!-- <CreateModal on:click={createAvatar}/> -->
+    <Astra/>
   {/if}
 </main>
 
@@ -24,6 +27,7 @@
   @tailwind utilities;
 
   body {
+    padding: 0px !important;
 	  background:#F3F4F6;
   }
 </style>

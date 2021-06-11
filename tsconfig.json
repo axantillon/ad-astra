@@ -8,4 +8,9 @@
     "__sapper__/*",
     "public/*"
   ],
+  "typeAcquisition": {
+    "include": [
+      "dt~three"
+    ]
+  }
 }

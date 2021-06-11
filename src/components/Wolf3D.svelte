@@ -13,8 +13,9 @@
 
 <div class="w-2/3 h-3/4 p-4 rounded-lg bg-white shadow-blueShadow" transition:fly="{{ y: 100, duration: 1000 }}">
     <iframe 
-        src="https://fullbody.readyplayer.me"
+        src="https://fullbody.readyplayer.me/avatar"
         title="Wolf3D Avatar Creator"
+        allow="camera; microphone; geolocation;"
         class="w-full h-full"
         on:message={recieveAvatar}
     ></iframe>
